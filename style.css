@@ -1,0 +1,230 @@
+/* Reset default styles and set box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Common property */
+
+
+
+/* navbar */
+#navbar h1:hover{ 
+    color: rgb(7, 84, 7);
+}
+
+#navbar {
+    background: orange;
+    color: white;
+}
+#navbar ul {
+    margin-bottom: 0;
+}
+
+.nav-list a,.nav-list li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-list a:hover {
+    color: rgb(4, 80, 3);
+}
+
+/* section-1 */
+#banner {
+    background: url(banner.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+.intro-section {
+    padding: 13rem 0;
+    flex-direction: column;
+    color: #175001;
+
+}
+
+/* section-2 */
+#about-me {
+    background: #6d6a6a;
+}
+
+.left-about img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right-about .right-main {
+    color: white;
+}
+.right-main p{
+    text-indent: 30px;
+}
+/* section-3 */
+#services {
+    background: #e5e7e9;
+}
+
+.section-three-item {
+    padding: 50px 30px;
+    border-radius: 5px;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.section-three-item i {
+    color: orange;
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+/* section-4 */
+#skills {
+    background: grey;
+}
+
+.right-contact .progress {
+    height: 30px;
+}
+
+.right-contact .bar {
+    font-size: large;
+}
+
+.left-contact .info-skill {
+    color: white;
+}
+
+.left-contact .info-skill p {
+    color: orange;
+    font-size: x-large;
+}
+
+/* section-5 */
+.contact-me {
+    background: #e5e7e9;
+}
+
+.right-contact input {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 7px;
+}
+
+.right-contact .col {
+    padding: 0;
+    margin-right: 5px;
+}
+
+.contact-me .right-contact {
+    padding-right: 10px;
+}
+
+.left-contact i {
+    font-size: 30px;
+    padding-top: 8px;
+    color: orange;
+}
+
+.left-contact .mt-2 {
+    padding-left: 60px;
+}
+
+.info {
+    color: #175001;
+}
+.left-contact .left-items {
+    display: flex;
+    flex-direction: column;
+}
+.left-contact .items{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*Footer*/
+.footer .text-light {
+    text-decoration: none;
+    background: rgb(61, 57, 57);
+}
+
+p {
+    font-size: 20px;
+}
+
+/*-----------------------------------media query----------------start her ----------------*/
+
+@media (max-width:1200px){
+    .left-about img{
+        height: 350px;
+        width: 300px;
+    }
+}
+
+@media (max-width:992px) {
+   
+    .intro-section{
+        padding: 7rem 0;
+    }
+    #skills h2 {
+        font-size: 30px;
+    }
+
+
+     .left-about {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-about img {
+      margin-bottom: 25px;
+       
+    }
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-contact .left-items{
+        display: flex;
+    }
+    .left-contact .items{
+        justify-content: unset;
+    }
+
+    
+
+}
+
+@media (max-width: 768px) {
+
+    .nav-list li {
+        padding: 10px 5px;
+    }
+    .left-contact .items{
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 576px){
+.max-pad {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+}
+
+@media (max-width: 504px){
+    .contact-me .right-contact .fl{
+        flex-direction: column;
+    }
+}
